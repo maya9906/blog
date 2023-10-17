@@ -1,11 +1,11 @@
-// Card.js (カードコンポーネント)
+// Cards.jsx
 import React from 'react';
 
-function Card({ inputData }) {
+function Card({ text, image }) {
   return (
-    <div>
-      <h2>カードコンテンツ</h2>
-      <p>{inputData}</p> {/* 入力データを表示 */}
+    <div className="blog-card">
+      {image && <img src={URL.createObjectURL(image)} alt="Selected" style={{ maxWidth: '300px' }} />}
+      <p>{text}</p>
     </div>
   );
 }
