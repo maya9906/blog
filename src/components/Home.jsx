@@ -1,18 +1,22 @@
 import React from 'react';
 import '../css/header.css';
+import '../css/home.css';
+import homeImage from '../imgs/home.png';
+
+
 function Header() {
   return (
     <section className='home'>
       <div className='imgsection'>
-        <img></img>
+        <img className='homeimg' src={homeImage} alt="Home" />
       </div>
       <div className='titlesection'>
-        <p>Your Words, Your World</p>
-        <h1>Let's Blog the Universe</h1>
-        <p>Your stories, your passion, your audience - all in one place.</p>
+        <p className='urw'>Your Words, Your World</p>
+        <h1 className='cp'>Let's Blog the Universe</h1>
+        <p className='bcp'>Discover the power of blogging and engage with like-minded individuals.</p>
+        <button className='wbtn'>Write a blog</button>
       </div>
 
-      <button>Write a blog</button>
     </section>
     
   );

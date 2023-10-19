@@ -33,6 +33,7 @@ function InputField({ onInputChange, onTitleChange }) {
       <TextField
         id="title"
         className='textfeild'
+        margin-top='2em'
         type="text"
         label="Title" // タイトル用のラベル
         fullWidth

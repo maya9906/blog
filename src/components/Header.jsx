@@ -2,12 +2,14 @@ import React from 'react';
 // import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 import '../css/header.css';
 import '../css/home.css';
+import UserIcon from '../imgs/user.png';
+
 function Header() {
   return (
     <header>
       <div className='header'>
         <h2 className='logo'>
-          Blog app
+          monologue
         </h2>
         <div className='options'>
           <p>Home</p>
@@ -15,7 +17,7 @@ function Header() {
           <p>About</p>
         </div>
         <div className='user'> 
-          <img src='../imgs/user.png' alt='user'/>
+        <img src={UserIcon} alt="Home" />
           <p>Maya Sato</p>
         </div>
       </div>
