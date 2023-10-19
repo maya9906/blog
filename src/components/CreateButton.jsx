@@ -1,9 +1,9 @@
 // CreateButton.js
 import React from 'react';
-
+import { Button } from '@mui/material';
 function CreateButton({ onClick }) {
   return (
-    <button onClick={onClick}>Create a Blog</button>
+    <Button onClick={onClick} variant="contained" disableElevatio={true}>Create a Blog</Button>
   );
 }
 
