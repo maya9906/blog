@@ -1,9 +1,11 @@
-// CreateButton.js
 import React from 'react';
-import { Button } from '@mui/material';
+import '../css/createbutton.css';
+
 function CreateButton({ onClick }) {
   return (
-    <Button onClick={onClick} variant="contained" disableElevatio={true}>Create a Blog</Button>
+    <button onClick={onClick} className="create-button">
+      Create a Blog
+    </button>
   );
 }
 

@@ -1,10 +1,55 @@
-.textfeild{
-    margin-top: 20px !important;
-    width: 90% !important;
-    margin-bottom: 20px !important;
-    /* text: start !important; */
+
+.inputbox{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-.MuiTextField-root{
-    margin-top: 20em !important;
+.inputbox h2{
+    color: white;
+}
+
+.inputbox p {
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    margin: 5px auto;
+}
+
+.textfeild {
+    display: block;
+    width: 5em;
+    margin: 0 auto;
+    background: rgb(13, 63, 190); /* 背景カラー */
+    color: rgb(255, 255, 255); /* テキストカラー */
+    border: 1px solid rgb(132, 117, 138); /* ボーダーを削除 */
+    border-radius: 5px; /* 角丸 */
+    padding: 10px; /* パディング */
+    outline: none; /* フォーカス時のアウトラインを削除 */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* ドロップシャドウ */
+    transition: box-shadow 0.3s; /* ホバー時のトランジション */
+}
+
+.textfeild::placeholder {
+    color:rgb(255, 255, 255); /* プレースホルダーテキストカラー */
+}
+
+.textfeild:hover {
+    box-shadow: 0 0 8px rgba(225, 220, 220, 0.3); /* ホバー時のドロップシャドウ */
+}
+
+.textfeild:focus {
+    box-shadow: 0 0 10px rgba(241, 227, 227, 0.5); /* フォーカス時のドロップシャドウ */
+}
+  
+#title{
+    width: 30%;
+}
+
+#fullWidth{
+    width: 50%;
+    height: 6em; /* 50pxの高さ */
+    text-align: left; /* テキストを左寄せに設定 */
+    vertical-align: top; /* テキストを上寄せに設定 */
+    margin-top: 20px;
 }

@@ -17,29 +17,14 @@ function Header() {
           <p>About</p>
         </div>
         <div className='user'> 
-        <img src={UserIcon} alt="Home" />
+        <img src={UserIcon} className='userimg' alt="Home" />
           <p>Maya Sato</p>
         </div>
       </div>
       <div className='line'/>
 
     </header>
-    // <AppBar position="static">
-    //     <Toolbar>
-    //         {/* ロゴ */}
-    //         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-    //           BLOG GO
-    //         </Typography>
-
-    //         {/* ナビゲーションメニュー */}
-    //         <Button color="inherit">Home</Button>
-    //         <Button color="inherit">Blog</Button>
-
-    //         {/* サインアップとログインボタン */}
-    //         <Button color="inherit">Sign Up</Button>
-    //         <Button color="inherit">Login</Button>
-    //     </Toolbar>
-    // </AppBar>
+    
   );
 }
 
