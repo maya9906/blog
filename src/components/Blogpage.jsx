@@ -38,14 +38,16 @@ function Blogpage() {
     <div className="App">
       
       <InputField onInputChange={handleInputChange} onTitleChange={handleTitleChange} />
-      <CreateButton onClick={handleCreateBlog} />
-      <ImageUpload onImageSelect={handleImageSelect} />
-      {selectedImage && !blogContent.length && (
-        <img src={URL.createObjectURL(selectedImage)} alt="Selected" style={{ maxWidth: '300px' }} />
-      )}
-      {blogContent.map((content, index) => (
-        <Cards key={index} text={content.text} image={content.image} title={content.title} />
-      ))}
+      <div className='btnsctn'>
+        <ImageUpload onImageSelect={handleImageSelect} />
+        {selectedImage && !blogContent.length && (
+            <img src={URL.createObjectURL(selectedImage)} alt="Selected" style={{ maxWidth: '300px' }} />
+            )}
+        <CreateButton onClick={handleCreateBlog} />
+      </div>
+        {blogContent.map((content, index) => (
+            <Cards key={index} text={content.text} image={content.image} title={content.title} />
+        ))}
     </div>
   );
 }
