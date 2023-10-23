@@ -5,6 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
+import '../css/card.css';
 
 function Cards({ text, image, title }) {
   return (
@@ -25,6 +26,7 @@ function Cards({ text, image, title }) {
               {title}
             </Typography>
             <Typography 
+              sx={{ maxWidth: 345  }}
               variant="body2" 
               color="text.secondary" 
               multiline
@@ -35,7 +37,10 @@ function Cards({ text, image, title }) {
         </CardActionArea>
         <CardActions>
           <Button size="small" color="primary">
-            Delate
+            Delete
+          </Button>
+          <Button size="small" color="primary">
+            Modify
           </Button>
         </CardActions>
       </Card>

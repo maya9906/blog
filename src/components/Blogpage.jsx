@@ -36,20 +36,22 @@ function Blogpage() {
 
   return (
     <div className="App">
-      
       <InputField onInputChange={handleInputChange} onTitleChange={handleTitleChange} />
       <div className='btnsctn'>
         <ImageUpload onImageSelect={handleImageSelect} />
         {selectedImage && !blogContent.length && (
-            <img src={URL.createObjectURL(selectedImage)} alt="Selected" style={{ maxWidth: '300px' }} />
-            )}
+          <img src={URL.createObjectURL(selectedImage)} alt="Selected" style={{ maxWidth: '300px' }} />
+        )}
         <CreateButton onClick={handleCreateBlog} />
       </div>
+      <div className="cards-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '20px',marginBottom:'2em' }}>
         {blogContent.map((content, index) => (
-            <Cards key={index} text={content.text} image={content.image} title={content.title} />
+          <Cards style={{ display: 'block', margin: '0 auto'}} key={index} text={content.text} image={content.image} title={content.title} />
         ))}
+      </div>
     </div>
   );
 }
+
 
 export default Blogpage;
