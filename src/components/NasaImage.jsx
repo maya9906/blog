@@ -1,26 +1,25 @@
-import React, { useState, useEffect } from 'react';
+// NasaImage.js
+import React, { useState } from 'react';
 import axios from 'axios';
-import { NASA_API_KEY } from '../config'; // config.jsからAPIキーをインポート
+import { NASA_API_KEY } from '../config';
+import '../css/cbtn-ubtn.css';
 
 function NasaImage() {
   const [imageData, setImageData] = useState(null);
-  const [date, setDate] = useState('');
 
-  // useEffect 関数の使用を明示的に示す
-  useEffect(() => {
-    const fetchNasaImage = async () => {
-      try {
-        const response = await axios.get(
-          `https://api.nasa.gov/planetary/apod?api_key=${NASA_API_KEY}&date=${date}`
-        );
-        setImageData(response.data);
-      } catch (error) {
-        console.error('Error fetching NASA image:', error);
-      }
-    };
-
-    fetchNasaImage();
-  }, [date]);
+  const fetchRandomNasaImage = async () => {
+    try {
+      // ランダムな日付を生成
+      const randomDate = getRandomDate();
+      const response = await axios.get(
+        `https://api.nasa.gov/planetary/apod?api_key=${NASA_API_KEY}&date=${randomDate}`
+      );
+      const nasaImageData = response.data;
+      setImageData(nasaImageData);
+    } catch (error) {
+      console.error('Error fetching NASA image:', error);
+    }
+  };
 
   const getRandomDate = () => {
     const start = new Date(1995, 5, 16); // APOD started on this date
@@ -29,19 +28,13 @@ function NasaImage() {
     return randomDate.toISOString().split('T')[0];
   };
 
-  const handleGetRandomImage = () => {
-    const randomDate = getRandomDate();
-    setDate(randomDate);
-  };
-
   return (
-    <div>
-      <button onClick={handleGetRandomImage}>Get Random NASA Image</button>
+    <div className='image-upload-container'>
+      <button className='select-button' onClick={fetchRandomNasaImage}>Get Random NASA Image</button>
       {imageData && (
         <div>
-          <h2>{imageData.title}</h2>
-          <img src={imageData.url} alt={imageData.title} />
-          <p>{imageData.explanation}</p>
+          <p className='titleofimg'>{imageData.title}</p>
+          <img className='nasaimg' src={imageData.url} alt={imageData.title} />
         </div>
       )}
     </div>
@@ -49,3 +42,4 @@ function NasaImage() {
 }
 
 export default NasaImage;
+

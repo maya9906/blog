@@ -1,4 +1,5 @@
-// Cards.jsx
+
+// Cards.js
 import React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -7,28 +8,28 @@ import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import '../css/card.css';
 
-function Cards({ text, image, title }) {
+function Cards({ text, nasaImageData, title }) {
   return (
     <div className="blog-card">
-      <Card sx={{ maxWidth: 345  }}>
+      <Card sx={{ maxWidth: 345 }}>
         <CardActionArea>
           <CardMedia
             component="img"
-            height="140"
-            image={URL.createObjectURL(image)}
-            alt="green iguana"
+            height="150"
+            image={nasaImageData.url}
+            alt={nasaImageData.title}
           />
           <CardContent>
-            <Typography 
-              gutterBottom 
-              variant="h6" 
+            <Typography
+              gutterBottom
+              variant="h6"
               component="div">
               {title}
             </Typography>
-            <Typography 
-              sx={{ maxWidth: 345  }}
-              variant="body2" 
-              color="text.secondary" 
+            <Typography
+              sx={{ maxWidth: 345 }}
+              variant="body2"
+              color="text.secondary"
               multiline
               maxRows={10}>
               {text}
