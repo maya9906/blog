@@ -1,7 +1,8 @@
 // App.js
 import Header from './components/Header';
-import Home from './components/Home'
-import Blogpage from './components/Blogpage'
+import Home from './components/Home';
+import Blogpage from './components/Blogpage';
+import Nasa from './components/NasaImage';
 import './App.css';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Home />
       <Blogpage />
+      <Nasa />
     </div>
   );
 }
