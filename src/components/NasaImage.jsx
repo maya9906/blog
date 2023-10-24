@@ -8,21 +8,22 @@ function NasaImage() {
   const [imageData, setImageData] = useState(null);
 
   const fetchRandomNasaImage = async () => {
+    console.log('Button clicked!');
     try {
-      // ランダムな日付を生成
       const randomDate = getRandomDate();
       const response = await axios.get(
         `https://api.nasa.gov/planetary/apod?api_key=${NASA_API_KEY}&date=${randomDate}`
       );
       const nasaImageData = response.data;
-      setImageData(nasaImageData);
+      console.log('Received NASA image data:', nasaImageData);
+      setImageData(nasaImageData); // 画像データを設定
     } catch (error) {
       console.error('Error fetching NASA image:', error);
     }
   };
 
   const getRandomDate = () => {
-    const start = new Date(1995, 5, 16); // APOD started on this date
+    const start = new Date(1999, 10, 6); // APOD started on this date
     const end = new Date();
     const randomDate = new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
     return randomDate.toISOString().split('T')[0];
@@ -42,4 +43,3 @@ function NasaImage() {
 }
 
 export default NasaImage;
-

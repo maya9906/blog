@@ -23,3 +23,8 @@
 .css-1drqjxm-MuiTypography-root{
     color: white !important;
 }
+
+.MuiTypography-body2 {
+    height: auto !important; 
+    padding: 1px !important;
+}
