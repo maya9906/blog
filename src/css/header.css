@@ -2,7 +2,7 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: rgb(13, 63, 190);
+    background-color: rgb(29, 30, 115);
 }
 .header{
     display: flex;

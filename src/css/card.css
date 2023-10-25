@@ -1,34 +1,66 @@
 .css-46bh2p-MuiCardContent-root {
     text-align: center;
-    background-color: #3d05b4;
+    background-color: rgb(29, 30, 115);
     color: white;
+}
+.css-1ri6ub7-MuiPaper-root-MuiCard-root{
+    max-width: fit-content !important;
 }
 
 .css-18k87ye-MuiTypography-root {
     font-weight: 700 !important;
 }
 .css-1t6e9jv-MuiCardActions-root {
-    background: #3d05b4;
+    background: rgb(29, 30, 115);
 }
-.css-1knaqv7-MuiButtonBase-root-MuiButton-root{
+/* .css-1knaqv7-MuiButtonBase-root-MuiButton-root{
     color: antiquewhite !important;
 }
 
+
 .css-r40f8v-MuiTypography-root {
     color: antiquewhite !important;
-}
+} */
 .css-o69gx8-MuiCardMedia-root {
     width: 400px !important;
 }
 .blog-card {
     margin:0 auto !important;
+    /* border: 1px solid #656568; */
+    border-radius: 5px;
 }
-
+.css-1l8ab4n-MuiTypography-root{
+    margin: 0 auto !important;
+}
 .css-1drqjxm-MuiTypography-root{
     color: white !important;
+    margin: 0 auto !important;
+
 }
 
 .MuiTypography-body2 {
     height: auto !important; 
     padding: 1px !important;
+}
+
+.cardmedia{
+    height: 300px !important;
+    overflow: hidden;
+}
+
+.deletebtn{
+    color: white !important;
+}
+
+.deletebtn:hover{
+    background-color: rgb(41, 42, 118) !important;
+}
+.css-46bh2p-MuiCardContent-root{
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+.css-1t6e9jv-MuiCardActions-root{
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
 }

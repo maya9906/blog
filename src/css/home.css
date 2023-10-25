@@ -28,7 +28,7 @@
 .urw{
     color: white;
     display: inline;
-    background: linear-gradient(90deg, rgb(100, 100, 186), rgb(16, 66, 190));
+    background: linear-gradient(90deg, rgb(100, 100, 193), rgb(30, 31, 125));
     padding: 0.5em 3em 0.5em 3em;
     font-weight: 700;
     border-radius: 3px;
@@ -50,7 +50,7 @@
     display: inline;
     border: none;
     outline: none;
-    background-color: rgba(0, 255, 255, 0.837);
+    background-color: rgb(34, 132, 191);
     padding: 1em 2em;
     color: white;
     border-radius: 3px;

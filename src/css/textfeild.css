@@ -21,7 +21,7 @@
     display: block;
     width: 5em;
     margin: 0 auto;
-    background: rgb(13, 63, 190); /* 背景カラー */
+    background: rgb(29, 30, 115); /* 背景カラー */
     color: rgb(255, 255, 255); /* テキストカラー */
     border: 1px solid rgb(132, 117, 138); /* ボーダーを削除 */
     border-radius: 5px; /* 角丸 */

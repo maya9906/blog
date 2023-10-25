@@ -7,10 +7,9 @@
   padding: 1em 2em;
   color: white;
   border-radius: 3px;
-  box-shadow: 2em;
-  font-weight: 500;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  
+  font-weight: 800;
+  
   transition: background-color 0.3s; /* ホバー時のトランジション */
 }
   
@@ -54,16 +53,21 @@
 }
 
 .select-button {
-  background-color: #007bff;
-  color: white;
+  background-color: rgb(22, 45, 236);
+  display: inline;
   border: none;
-  border-radius: 5px;
-  padding: 10px 15px;
-  cursor: pointer;
+  outline: none;
+  padding: 1em 2em;
+  color: white;
+  border-radius: 3px;
+  font-weight: 800;
+  margin-bottom: auto;
+  transition: background-color 0.3s;
 }
+  
 
 .select-button:hover {
-  background-color: #0095ff;
+  background-color: rgb(38, 60, 246);
 }
 
 .selected-image {
@@ -73,6 +77,10 @@
 
 .titleofimg{
   color: aliceblue;
+  font-size: 1em;
+  letter-spacing: 1.2px;
+  font-stretch: ultra-condensed;
+  font-family: inherit;
 }
 .nasaimg{
   width: 350px;

@@ -14,9 +14,10 @@ function Cards({ text, nasaImageData, title, onDelete }) {
   return (
     <div className="blog-card">
       
-      <Card sx={{ maxWidth: 345 }} >
+      <Card sx={{ maxWidth: 400 }} >
         <CardActionArea>
         <CardMedia
+          className='cardmedia'
           component="img"
           height="150"
           image={nasaImageData ? nasaImageData.url : ''} // 画像がある場合に URL を設定
@@ -30,21 +31,30 @@ function Cards({ text, nasaImageData, title, onDelete }) {
           /> */}
           <CardContent>
             <Typography
+              sx={{
+                overflow: "hidden",
+                whiteSpace: "pre-wrap", // テキストが折り返されるように制御
+                wordWrap: "break-word", // 長い単語を適切に折り返すための制御
+              }}
               gutterBottom
               variant="h6"
               component="div">
               {title}
             </Typography>
             <Typography
-              sx={{ maxWidth: 345 }}
-              variant="body2"
-              color="text.secondary">
+              sx={{
+                maxWidth: 345,
+                overflow: "hidden",
+                whiteSpace: "pre-wrap", // テキストが折り返されるように制御
+                wordWrap: "break-word", // 長い単語を適切に折り返すための制御
+              }}
+              variant="body2">
               {text}
             </Typography>
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary" onClick={deleteCard}>
+          <Button size="small" color="primary" onClick={deleteCard} className='deletebtn'>
             Delete
           </Button>
         </CardActions>
