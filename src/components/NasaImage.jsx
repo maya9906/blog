@@ -4,7 +4,7 @@ import axios from 'axios';
 import { NASA_API_KEY } from '../config';
 import '../css/cbtn-ubtn.css';
 
-function NasaImage() {
+function NasaImage({handleGetImage}) {
   const [imageData, setImageData] = useState(null);
 
   const fetchRandomNasaImage = async () => {
@@ -17,6 +17,7 @@ function NasaImage() {
       const nasaImageData = response.data;
       console.log('Received NASA image data:', nasaImageData);
       setImageData(nasaImageData); // 画像データを設定
+      handleGetImage(nasaImageData);
     } catch (error) {
       console.error('Error fetching NASA image:', error);
     }
