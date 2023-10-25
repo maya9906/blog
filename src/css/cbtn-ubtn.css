@@ -1,0 +1,79 @@
+
+.create-button {
+  background-color: #9c27b0 ;
+  display: inline;
+  border: none;
+  outline: none;
+  padding: 1em 2em;
+  color: white;
+  border-radius: 3px;
+  box-shadow: 2em;
+  font-weight: 500;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  transition: background-color 0.3s; /* ホバー時のトランジション */
+}
+  
+.create-button:hover {
+  background-color: #b638d9; /* 少し明るい色に変更 */
+}
+
+.image-upload {
+  text-align: center;
+  margin-top: 20px;
+}
+  
+.upload-label {
+  display: block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-label:hover {
+  background-color: #2980b9;
+}
+  
+.image-preview {
+  margin-top: 20px;
+}
+
+.selected-image {
+  max-width: 100%;
+  height: auto;
+}
+  
+/* css for upload btn */
+/* Nasa.css */
+.image-upload-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.select-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.select-button:hover {
+  background-color: #0095ff;
+}
+
+.selected-image {
+  margin: 10px 0;
+  color: #007bff;
+}
+
+.titleofimg{
+  color: aliceblue;
+}
+.nasaimg{
+  width: 350px;
+}

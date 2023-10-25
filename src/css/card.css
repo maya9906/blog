@@ -1,0 +1,30 @@
+.css-46bh2p-MuiCardContent-root {
+    text-align: center;
+    background-color: #3498db;
+    color: white;
+}
+.css-1t6e9jv-MuiCardActions-root {
+    background: #3498db;
+}
+.css-1knaqv7-MuiButtonBase-root-MuiButton-root{
+    color: antiquewhite !important;
+}
+
+.css-r40f8v-MuiTypography-root {
+    color: antiquewhite !important;
+}
+.css-o69gx8-MuiCardMedia-root {
+    width: 400px !important;
+}
+.blog-card {
+    margin:0 auto !important;
+}
+
+.css-1drqjxm-MuiTypography-root{
+    color: white !important;
+}
+
+.MuiTypography-body2 {
+    height: auto !important; 
+    padding: 1px !important;
+}
