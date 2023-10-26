@@ -3,8 +3,7 @@ import '../css/header.css';
 import '../css/home.css';
 import homeImage from '../imgs/home.png';
 
-
-function Header() {
+function Home() {
   return (
     <section className='home'>
       <div className='imgsection'>
@@ -16,10 +15,8 @@ function Header() {
         <p className='bcp'>Discover the power of blogging and engage with like-minded individuals.</p>
         <button className='wbtn'>Write a blog</button>
       </div>
-
     </section>
-    
   );
 }
 
-export default Header;
+export default Home;

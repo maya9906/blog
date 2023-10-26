@@ -1,10 +1,14 @@
 import React from 'react';
-// import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 import '../css/header.css';
 import '../css/home.css';
 import UserIcon from '../imgs/user.png';
 
-function Header() {
+function Header({ onPageChange }) {
+  // ページ切り替えのハンドラ
+  const handlePageChange = (pageName) => {
+    onPageChange(pageName);
+  };
+
   return (
     <header>
       <div className='header'>
@@ -12,9 +16,10 @@ function Header() {
           monologue
         </h2>
         <div className='options'>
-          <p>Home</p>
-          <p>Blog</p>
-          <p>About</p>
+          <p onClick={() => handlePageChange('home')}>Home</p>
+          <p onClick={() => handlePageChange('blog')}>Blog</p>
+          {/* 他のナビゲーション項目を追加できます */}
+          {/* 例: <p onClick={() => handlePageChange('about')}>About</p> */}
         </div>
         <div className='user'> 
           <img src={UserIcon} className='userimg' alt="Home" />
@@ -22,9 +27,7 @@ function Header() {
         </div>
       </div>
       <div className='line'/>
-
     </header>
-    
   );
 }
 
