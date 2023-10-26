@@ -18,8 +18,6 @@ function Header({ onPageChange }) {
         <div className='options'>
           <p onClick={() => handlePageChange('home')}>Home</p>
           <p onClick={() => handlePageChange('blog')}>Blog</p>
-          {/* 他のナビゲーション項目を追加できます */}
-          {/* 例: <p onClick={() => handlePageChange('about')}>About</p> */}
         </div>
         <div className='user'> 
           <img src={UserIcon} className='userimg' alt="Home" />

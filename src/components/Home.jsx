@@ -4,7 +4,13 @@ import '../css/home.css';
 import homeImage from '../imgs/home.png';
 
 
-function Header() {
+function Header(props) {
+  const { onPageChange } = props;
+
+  const handleButtonClick = () => {
+    onPageChange('blog'); // ボタンがクリックされたときに'blog'ページに切り替える
+  };
+
   return (
     <section className='home'>
       <div className='imgsection'>
@@ -14,7 +20,8 @@ function Header() {
         <p className='urw'>Your Words, Your World</p>
         <h1 className='cp'>Let's Blog the Universe</h1>
         <p className='bcp'>Discover the power of blogging and engage with like-minded individuals.</p>
-        <button className='wbtn'>Write a blog</button>
+        <button className='wbtn' onClick={handleButtonClick}>Write a blog</button>
+      
       </div>
 
     </section>

@@ -23,12 +23,6 @@ function Cards({ text, nasaImageData, title, onDelete }) {
           image={nasaImageData ? nasaImageData.url : ''} // 画像がある場合に URL を設定
           alt={nasaImageData ? nasaImageData.title : ''} // タイトルがある場合に alt テキストを設定
         />
-          {/* <CardMedia
-            component="img"
-            height="150"
-            image={nasaImageData.url}
-            alt={nasaImageData.title}
-          /> */}
           <CardContent>
             <Typography
               sx={{
