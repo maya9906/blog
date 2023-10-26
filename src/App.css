@@ -4,3 +4,11 @@
   gap: 3em;
   justify-content: center;
 }
+
+@media (max-width:500px){
+  .btnsctn{
+    flex-direction: column;
+    gap: 5px;
+    justify-content: unset;
+  }
+}

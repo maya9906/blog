@@ -17,7 +17,7 @@ function Header() {
           <p>About</p>
         </div>
         <div className='user'> 
-        <img src={UserIcon} className='userimg' alt="Home" />
+          <img src={UserIcon} className='userimg' alt="Home" />
           <p>Maya Sato</p>
         </div>
       </div>

@@ -57,3 +57,45 @@
     box-shadow: 2em;
     font-weight: 500;
 }
+
+@media (max-width:810px){
+    .urw{
+        font-size: 0.8em;
+    }
+
+    .cp{
+        font-size: 2.2em;
+    }
+
+    .bcp{
+        font-size: 0.8em;
+    }
+    .wbtn{
+        
+        padding: 0.8em 1.6em;
+        font-size: 0.8em;
+        font-weight: 500;
+    }
+}
+@media (max-width:500px){
+    .home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1em;
+    }
+    .homeimg {
+        display: none;
+    }  
+    
+    .imgsection{
+        flex: 1;
+        border: none;
+    }
+    .titlesection{
+        padding: 0em 2em 0em 2em;
+    }
+    .wbtn{
+        display: block;
+    }
+}

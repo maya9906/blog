@@ -1,4 +1,3 @@
-
 .inputbox{
     margin-top: 20px;
     display: flex;
@@ -53,4 +52,19 @@
     text-align: left; /* テキストを左寄せに設定 */
     vertical-align: top; /* テキストを上寄せに設定 */
     margin-top: 20px;
+}
+
+@media (max-width:500px){
+    #title{
+        width: 50%;
+    }
+
+    #fullWidth{
+        width: 70%;
+        height: 4em; /* 50pxの高さ */
+        margin-top: 1em;
+    }
+    .inputbox{
+        margin-top: 0px;
+    }
 }

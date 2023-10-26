@@ -3,6 +3,7 @@ import InputField from './InputField';
 import CreateButton from './CreateButton';
 import NasaImage from './NasaImage';
 import '../App.css';
+import '../css/card.css';
 import Cards from './Cards';
 
 function Blogpage() {
@@ -28,13 +29,13 @@ function Blogpage() {
       setData('');
       setTitle('');
 
-      // 新しいブログが作成されたとき、newBlogステートを設定
+      // Set newBlog state when a new blog is created
       setNewBlog(newBlogContent);
     }
   };
 
   const handleDeleteBlog = (index) => {
-    // ブログを削除
+    // delete a blog
     const updatedBlogContent = [...blogContent];
     updatedBlogContent.splice(index, 1);
     setBlogContent(updatedBlogContent);
@@ -51,7 +52,7 @@ function Blogpage() {
         <NasaImage handleGetImage={handleGetImage} />
         <CreateButton onClick={handleCreateBlog} />
       </div>
-      <div className="cards-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '20px', marginBottom: '2em' }}>
+      <div className="cards-grid" style={{ display: 'grid', gap: '20px', marginBottom: '2em' }}>
         {blogContent.map((content, index) => (
           <Cards
             key={index}

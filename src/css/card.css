@@ -64,3 +64,32 @@
     border-right: 1px solid gray;
     border-bottom: 1px solid gray;
 }
+.cards-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width:810px){
+    .cardmedia {
+        height: 200px !important;
+    }
+    .css-o69gx8-MuiCardMedia-root {
+        width: 350px !important;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:500px){
+    .cardmedia {
+        height: 200px !important;
+    }
+    .css-o69gx8-MuiCardMedia-root {
+        width: 300px !important;
+    }
+    .cards-grid {
+        margin-top: 1em;
+        grid-template-columns: 1fr;
+    }
+}
