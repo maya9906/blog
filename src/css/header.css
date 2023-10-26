@@ -22,6 +22,10 @@ body{
     color: aliceblue;
     font-weight: 600;
 }
+.options p{
+    cursor: pointer;
+}
+
 
 .user {
     display: flex;
