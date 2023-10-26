@@ -16,8 +16,9 @@ function Header({ onPageChange }) {
           monologue
         </h2>
         <div className='options'>
-          <p onClick={() => handlePageChange('home')}>Home</p>
-          <p onClick={() => handlePageChange('blog')}>Blog</p>
+          <p>Home</p>
+          <p>Blog</p>
+          <p>About</p>
         </div>
         <div className='user'> 
           <img src={UserIcon} className='userimg' alt="Home" />

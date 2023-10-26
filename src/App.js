@@ -14,9 +14,9 @@ function App() {
 
   return (
     <div className="App">
-      <Header onPageChange={handlePageChange} /> {/* onPageChange プロパティを Header に渡す */}
-      {currentPage === 'home' && <Home />}
-      {currentPage === 'blog' && <Blogpage />}
+      <Header />
+      <Home />
+      <Blogpage />
     </div>
   );
 }

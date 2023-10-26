@@ -44,6 +44,10 @@ body{
     width: 2em;
 }
 
+.options p {
+    cursor: pointer;
+}
+
 @media (max-width:650px) {
     .options{
         font-size: 0.7em;

@@ -4,13 +4,7 @@ import '../css/home.css';
 import homeImage from '../imgs/home.png';
 
 
-function Header(props) {
-  const { onPageChange } = props;
-
-  const handleButtonClick = () => {
-    onPageChange('blog'); // ボタンがクリックされたときに'blog'ページに切り替える
-  };
-
+function Header() {
   return (
     <section className='home'>
       <div className='imgsection'>
@@ -23,10 +17,8 @@ function Header(props) {
         <button className='wbtn' onClick={handleButtonClick}>Write a blog</button>
       
       </div>
-
     </section>
-    
   );
 }
 
-export default Header;
+export default Home;
